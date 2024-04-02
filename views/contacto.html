@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STIGMATA</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="icon" type="image/jpg" href="../imagenes/imagenes_para_la_pagina/Favicon.png">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+</head>
+<body>    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="galeria.html">GALERIA</a></li>
+                <li><a href="presupuesto.html">PRESUPUESTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="contenedor_mapa">
+            <!--Mapa dinamico-->
+            <div id="mapa"></div>
+            <!--Datos de contacto-->
+            <div>
+                <div class="contenedor_contactos">
+                    <h6>Direccion:</h6>
+                    <div class="caja">
+                        <p>HERNAN CORTES 33</p>
+                    </div>
+                </div>
+                <div class="contenedor_contactos">
+                    <h6>Mail:</h6>
+                    <div class="caja">
+                        <p>stigmata@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contenedor_contactos">
+                    <h6>Telefono:</h6>
+                    <div class="caja">
+                        <p>613 04 44 19</p>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="contenedor_titulo_footer">
+            <h2>STIGMATA</h2>
+            <video src="imagenes/videoplayback.mp4" autoplay loop muted></video>
+        </div>
+        <div class="linea_footer"></div>
+        <div class="contenedor_informacion">
+            <h4>HORARIO</h4>
+            <ul>
+                <li>Lunes a Viernes.	
+                    10:00H a 20:00H</li>
+                <li>Sábado............	
+                    Cerrado</li>
+                <li>Domingo..........
+                    Cerrado</li>
+            </ul>
+        </div>
+        <div class="contenedor_informacion">
+            <h4>INFORMACION</h4>
+            <ul>
+                <li><img src="../imagenes/imagenes_para_la_pagina/localizacion.png" alt="">Fuengirola, Malaga</li>
+                <li><img src="../imagenes/imagenes_para_la_pagina/telefono.png" alt="">613 04 44 19</li>
+                <li><img src="../imagenes/imagenes_para_la_pagina/email.png" alt="">Proximamente</li>
+            </ul>
+        </div>
+        <div class="contenedor_informacion">
+            <h4>SIGUENOS</h4>
+            <ul>
+                <li><a href=""><img src="../imagenes/imagenes_para_la_pagina/instagram.png" alt=""></a></li>
+                <li><a href=""><img src="../imagenes/imagenes_para_la_pagina/gorjeo.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="contenedor_informacion">
+            <p>	&copy; 2023 - Gaston Balbi</p> <br>
+            <a target="_blank" href="https://www.aepd.es/es/politica-de-privacidad-y-aviso-legal">Política de privacidad y aviso legal</a>     <!-- El enlace que se ha elejido para esta etiqueta es de ejemplo, ya que no especificaba que pagina o que tendia que ir en la parte de aviso legal.-->
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+    <script src="../js/mapa.js"></script>
+</body>
+</html>

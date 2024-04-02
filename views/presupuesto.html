@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STIGMATA</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="icon" type="image/jpg" href="../imagenes/imagenes_para_la_pagina/Favicon.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="galeria.html">GALERIA</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Formulario para tomas de datos y calculo de presupuesto -->
+        <form id="formulario" name="formulario" method="post" action="#">
+            <!-- DATOS PERSONALES -->
+            <fieldset>
+                <legend>Datos Personales:</legend>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" placeholder="Escriba su nombre aqui" name="nombre" id="nombre" class="valida"><span> *</span>                  
+                    <small>Error mensaje</small>
+                </div>                    
+                <div>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" placeholder="Escriba su apellido aqui" name="apellido" id="apellido" class="valida"><span> *</span>                   
+                    <small>Error mensaje</small>
+                </div>
+                <div>
+                    <label for="telefono">Telefono de contacto:</label>
+                    <input type="text" placeholder="Escriba su telefono aqui" name="telefono" id="telefono" class="valida"><span> *</span>
+                    <small>Error mensaje</small>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="text" placeholder="Escriba su email aqui" name="email" id="email" class="valida"><span> *</span>
+                    <small>Error mensaje</small>
+                </div>
+                <p class="campo_obligatorio">(*) Campos obligatorios</p>
+            </fieldset>
+            <!-- PRESUPUESTO -->
+            <fieldset>
+                <legend>Presupuesto:</legend>
+                <div>
+                    <label>Tamaño:</label>
+                    <select id="tamañoTatuaje">
+                        <option value="">Escoge tamaño</option>
+                        <option value="100">Pequeño</option>
+                        <option value="250">Mediano</option>
+                        <option value="400">Grande</option>
+                    </select>
+                </div>                
+                <div>
+                    <label for="sesion">Sesiones:</label>
+                    <input id="sesion" type="number" min="1" max="4" value="">
+                </div>
+                <div>
+                    <label>Elija los extras para el producto:</label>
+
+                    <div id="extras">
+                        <label for="color">Tatuaje a color</label>
+                        <input type="checkbox" value="50" id="color" >
+
+                        <label for="diseño">Diseño personalizado</label>
+                        <input type="checkbox" value="100" id="diseño" >
+                    </div>                    
+                </div>
+                <div>
+                    <label for="total">Presupuesto estimado:</label>
+                    <input type="text" id="total"  value="">
+                </div>
+            </fieldset>
+            <!--CONDICIONES -->
+            <fieldset>
+                <legend>Condiciones y envío del presupuesto:</legend>
+                <label for="politica">He leido la politica de privacidad</label>
+                <input type="checkbox" name="politica" id="politica" required>
+                <br>
+                <!--BOTON ENVIAR-->    
+                <button id="boton" type="submit">Enviar formulario</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <div class="contenedor_titulo_footer">
+            <h2>STIGMATA</h2>
+            <video src="imagenes/videoplayback.mp4" autoplay loop muted></video>
+        </div>
+        <div class="linea_footer"></div>
+        <div class="contenedor_informacion">
+            <h4>HORARIO</h4>
+            <ul>
+                <li>Lunes a Viernes.	
+                    10:00H a 20:00H</li>
+                <li>Sábado............	
+                    Cerrado</li>
+                <li>Domingo..........
+                    Cerrado</li>
+            </ul>
+        </div>
+        <div class="contenedor_informacion">
+            <h4>INFORMACION</h4>
+            <ul>
+                <li><img src="../imagenes/imagenes_para_la_pagina/localizacion.png" alt="">Fuengirola, Malaga</li>
+                <li><img src="../imagenes/imagenes_para_la_pagina/telefono.png" alt="">613 04 44 19</li>
+                <li><img src="../imagenes/imagenes_para_la_pagina/email.png" alt="">Proximamente</li>
+            </ul>
+        </div>
+        <div class="contenedor_informacion">
+            <h4>SIGUENOS</h4>
+            <ul>
+                <li><a href=""><img src="../imagenes/imagenes_para_la_pagina/instagram.png" alt=""></a></li>
+                <li><a href=""><img src="../imagenes/imagenes_para_la_pagina/gorjeo.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="contenedor_informacion">
+            <p>	&copy; 2023 - Gaston Balbi</p> <br>
+            <a target="_blank" href="https://www.aepd.es/es/politica-de-privacidad-y-aviso-legal">Política de privacidad y aviso legal</a>     <!-- El enlace que se ha elejido para esta etiqueta es de ejemplo, ya que no especificaba que pagina o que tendia que ir en la parte de aviso legal.-->
+        </div>
+    </footer>   
+
+
+    <script src="../js/javascript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+{
+    
+    "evapincelli":[
+        {"edad":"35 años",
+         "estilo":"Japones",
+         "horario":"10:00hs a 18:00hs"}
+    ],
+
+    "brunodiaz":[
+        {"edad":"24 años",
+         "estilo":"Cartoon",
+         "horario":"10:00hs a 18:00hs"}
+   ],
+
+    "sergiomuñoz":[
+        {"edad":"41 años",
+         "estilo":"Blackwork",
+         "horario":"12:00hs a 20:00hs"}
+   ],
+
+    "luciasappia":[
+        {"edad":"27 años",
+         "estilo":"Tradicional",
+         "horario":"12:00hs a 20:00hs"}
+    ],
+        
+    "jesusbrecuri":[
+        {"edad":"37 años",
+         "estilo":"Realismo",
+         "horario":"10:00hs a 18:00hs"}
+    ]
+    
+}

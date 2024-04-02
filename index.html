@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STIGMATA</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" type="image/jpg" href="imagenes/imagenes_para_la_pagina/Favicon.png">
+</head>
+<body> <!--Apartado del titulo y menu de navegacion en la parte superior -->
+    <a id="inicio"></a>
+    <div class="contenedor_titulo">
+        <h1>STIGMATA</h1>
+        <img class="flecha" src="imagenes/imagenes_para_la_pagina/flecha.png" alt="">
+    </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="views/galeria.html">GALERIA</a></li>
+                <li><a href="views/presupuesto.html">PRESUPUESTO</a></li>
+                <li><a href="views/contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <a class="enlace_interno" href="#inicio"><img src="imagenes/imagenes_para_la_pagina/flecha_arriba.png" alt=""></a> <!-- Enlace interno (flecha que acompaña al usuario para poder volver a la parte alta de la pagina web)-->
+        <!-- Seccion destinada a la presentacion de la empresa con enlaces a diferentes partes de la pagina web -->
+        <section class="contenedor_presentacion">
+            <h3>Quienes Somos</h3>
+            <div class="presentacion">
+                <img class="imagen1" src="imagenes/imagenes_para_la_pagina/1.jpg" alt="">
+                <p>STIGMATA <br><br> Es un concepto revolucionario nunca antes visto en Malaga. 
+                    Se trata de la unión de 5 profesionales al servicio de los clientes más exigentes en el mundo del tatuaje en cuanto a 
+                    acabado, precio, tiempo de espera, reservas, dedicación y seguimiento del diseño. Eva, Bruno, Lucia, Sergio y Jesus forman la familia de Stigmata. 
+                    Ellos son los encargados de que, sea cual sea tu idea para llevarla a tinta, se haga realidad. 
+                    <br><br>Si te gustaría concertar una cita con nosotros, 
+                    ve directamente a nuestra página de <a href="views/contacto.html">CONTACTO</a> y dinos por email o Whatsapp que te gustaría hacerte.
+                    Si lo que buscas es inspiración, no dudes en visitar nuestra <a href="views/galeria.html">GALERIA</a>, donde habra una gran variedad de donde tomar ejemplo.</p>
+            </div>
+        </section>
+        <!-- Seccion en la que se encuentran imagenes de los tatuadores -->
+        <section class="contenedor_tatuadores">
+            <h3>Nuestros Tatuadores</h3>
+            <div class="caja_tatuadores">
+                <div class="tatuadores">
+                    <img src="imagenes/tatuadores/evapincelli(japones).jpg" alt="tatuadora estilo japones">
+                </div>
+                <div class="tatuadores">
+                    <img src="imagenes/tatuadores/brunodiaz(cartoon).jpg" alt="tatuador estilo cartoon">                  
+                </div>
+                <div class="tatuadores">
+                    <img src="imagenes/tatuadores/sergiomuñoz(blackwork).jpg" alt="tatuador estilo blackwork">
+                </div>
+                <div class="tatuadores">
+                    <img src="imagenes/tatuadores/luciasappia(tradicional).jpg" alt="tatuadora estilo tradicional">   
+                </div>    
+                <div class="tatuadores">
+                    <img src="imagenes/tatuadores/jesusbrecuri(realismo).jpg" alt="tatuador estilo realismo">        
+                </div>
+            </div> 
+        </section>
+        <!-- Seccion en la que se cargan archivos externos (JSON) a traves de eventos Javascript dando info de los tatuadores -->
+        <section id="seccion_box">
+            <div id="contenedorBox">
+                <input class="botonjson" type="button" value="Eva Pincelli" onclick="CargarEva()">
+                <div id="box"></div>
+            </div>
+            <div id="contenedorBox1">
+                <input class="botonjson" type="button" value="Bruno Diaz" onclick="CargarBruno()">
+                <div id="box1"></div>
+            </div>
+            <div id="contenedorBox2">
+                <input class="botonjson" type="button" value="Sergio Muñoz" onclick="CargarSergio()">
+                <div id="box2"></div>
+            </div>
+            <div id="contenedorBox3">
+                <input class="botonjson" type="button" value="Lucia Sappia" onclick="CargarLucia()">
+                <div id="box3"></div>
+            </div>
+            <div id="contenedorBox4">
+                <input class="botonjson" type="button" value="Jesus Brecuri" onclick="CargarJesus()">
+                <div id="box4"></div>
+            </div>
+        </section>
+        <!-- Seccion donde damos informacion util para los usuarios que visiten la pagina web -->
+        <section class="contnedor_cuidados">
+            <h3>Consejos y Metodos Post Tatuaje</h3>
+            <h5>Cuidados del tatuaje recién hecho</h5><br><br>
+            <div>
+                <p>El cuidado de un tatuaje nuevo empieza en el propio estudio de tattoos y bajo las recomendaciones del tatuador. Así que, una vez termine el diseño, colocará papel de film o un apósito (suele ser más higiénico) para proteger el diseño de posibles. <br>
+                    Para cambiar el apósito hay que lavarse bien las manos con agua y jabón, evitando la entrada de bacterias en la herida, pues un tatuaje no deja de ser una herida. Seguidamente, para retirar el apósito, debe hacerse por una punta mientras se mantiene la piel tirante. Si el tatuador a cubierto el tatuaje con papel film, deberá retirarse pasadas las cuatro horas. <br><br>
+                    En ambos casos, para limpiar la piel, habrá que hacerlo con agua tibia y jabón neutro y secar la zona con papel de cocina con toques (nada de frotar). Asimismo, y por norma general, los tatuadores recomiendan seguir este proceso, al menos, durante una semana y de forma diaria.</p>
+                    <img class="imagen2" src="imagenes/imagenes_para_la_pagina/4.jpg" alt="">
+            </div>
+            <br><br><br>
+            <h5>Qué evitar durante el cuidado de un tatuaje</h5><br><br>
+            <div>
+                <img class="imagen3" src="imagenes/imagenes_para_la_pagina/2.jpg" alt="">
+                <p>
+                    Hay que tener muy claro que un tatuaje no deja de ser una herida que necesita cicatrizar. Por este motivo, es importante que, como futuro tatuador profesional, se deje claro qué debe evitarse durante este proceso: <br><br>
+                    PRENDAS AJUSTADAS.<br> Durante la cicatrización de un tatuaje es muy importante evitar la ropa ajustada, sobre todo en la zona tatuada. En caso de no poderse evitar, habrá que proteger el diseño con un plástico. En caso de pegarse la tela al tatuaje es importante no tirar, sino humedecer la zona y despegarla con cuidado.<br><br>
+                    HACER DEPORTE. <br> Como venimos diciendo, un tatuaje no deja de ser una herida. Si sudamos a causa de hacer ejercicio (o del calor mismo) esto provocará irritación y picor, dañando el tatuaje. También es importante evitar golpes en la zona.<br><br>
+                    RASCARSE. <br> Los primeros días es normal sentir picor en la zona tatuada, pero es muy importante no rascarse, pues se puede infectar y dañar el dibujo. Ante cualquier duda sobre el estado del tatuaje, es importante acudir al tatuador, quien examinará la zona. Asimismo, es normal que aparezcan costras, que nunca deben arrancarse.<br><br>
+                    PLAYA Y PISCINA. <br> Finalmente, si no es recomendable tatuarse en verano, tampoco lo es ir a la playa o a la piscina pues, con la arena y/o el cloro hay más probabilidades de que el tatuaje se infecte.
+                </p>
+            </div>
+        </section>
+    </main>
+    <!-- Pie de pagina donde se encuentra informacion, tedes sociales y politicas de la empresa -->
+    <footer>
+        <div class="contenedor_titulo_footer">
+            <h2>STIGMATA</h2>
+            <video src="imagenes/videoplayback.mp4" autoplay loop muted></video>
+        </div>
+        <div class="linea_footer"></div>
+        <div class="contenedor_informacion">
+            <h4>HORARIO</h4>
+            <ul>
+                <li>Lunes a Viernes.	
+                    10:00H a 20:00H</li>
+                <li>Sábado............	
+                    Cerrado</li>
+                <li>Domingo..........
+                    Cerrado</li>
+            </ul>
+        </div>
+        <div class="contenedor_informacion">
+            <h4>INFORMACION</h4>
+            <ul>
+                <li><img src="imagenes/imagenes_para_la_pagina/localizacion.png" alt="">Fuengirola, Malaga</li>
+                <li><img src="imagenes/imagenes_para_la_pagina/telefono.png" alt="">613 04 44 19</li>
+                <li><img src="imagenes/imagenes_para_la_pagina/email.png" alt="">Proximamente</li>
+            </ul>
+        </div>
+        <div class="contenedor_informacion">
+            <h4>SIGUENOS</h4>
+            <ul>
+                <li><a href=""><img src="imagenes/imagenes_para_la_pagina/instagram.png" alt=""></a></li>
+                <li><a href=""><img src="imagenes/imagenes_para_la_pagina/gorjeo.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="contenedor_informacion">
+            <p>	&copy; 2023 - Gaston Balbi</p> <br>
+            <a target="_blank" href="https://www.aepd.es/es/politica-de-privacidad-y-aviso-legal">Política de privacidad y aviso legal</a>     <!-- El enlace que se ha elejido para esta etiqueta es de ejemplo, ya que no especificaba que pagina o que tendia que ir en la parte de aviso legal.-->
+        </div>
+    </footer>
+    <!-- Scripts con enlace a otra pagina web y entre archivos de la propia pagina web -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../js/javascript.js"></script>
+</body>
+</html>
